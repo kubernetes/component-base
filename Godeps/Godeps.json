@@ -8,7 +8,7 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/beorn7/perks",
-			"Rev": "3ac7bf7a47d1"
+			"Rev": "4c0e84591b9a"
 		},
 		{
 			"ImportPath": "github.com/blang/semver",
