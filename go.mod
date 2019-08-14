@@ -12,7 +12,7 @@ require (
 	github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 	github.com/spf13/pflag v1.0.3
 	github.com/stretchr/testify v1.3.0
-	k8s.io/apimachinery v0.0.0-20190813220643-cbbcc3bf2cd4
+	k8s.io/apimachinery v0.0.0-20190813235223-d2c4b5819cd0
 	k8s.io/klog v0.4.0
 	k8s.io/utils v0.0.0-20190801114015-581e00157fb1
 )
@@ -23,5 +23,5 @@ replace (
 	golang.org/x/sys => golang.org/x/sys v0.0.0-20190209173611-3b5209105503
 	golang.org/x/text => golang.org/x/text v0.3.1-0.20181227161524-e6919f6577db
 	golang.org/x/tools => golang.org/x/tools v0.0.0-20190313210603-aa82965741a9
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190813220643-cbbcc3bf2cd4
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190813235223-d2c4b5819cd0
 )
