@@ -220,7 +220,7 @@
 		},
 		{
 			"ImportPath": "golang.org/x/tools",
-			"Rev": "aa82965741a9"
+			"Rev": "6c7e314b6563"
 		},
 		{
 			"ImportPath": "gopkg.in/check.v1",
@@ -244,7 +244,7 @@
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery",
-			"Rev": "78ffbfd52d52"
+			"Rev": "21ddcbbef9e1"
 		},
 		{
 			"ImportPath": "k8s.io/gengo",
