@@ -12,8 +12,8 @@ require (
 	github.com/prometheus/procfs v0.0.2
 	github.com/spf13/pflag v1.0.3
 	github.com/stretchr/testify v1.3.0
-	k8s.io/apimachinery v0.0.0-20191105135202-8b539fc8459d
-	k8s.io/client-go v0.0.0-20191105135202-b132d4e8c200
+	k8s.io/apimachinery v0.0.0-20191106113314-e1faffd14b0f
+	k8s.io/client-go v0.0.0-20191106113314-5fc7a9e1ae72
 	k8s.io/klog v1.0.0
 	k8s.io/utils v0.0.0-20191030222137-2b95a09bc58d
 )
@@ -27,7 +27,7 @@ replace (
 	golang.org/x/sys => golang.org/x/sys v0.0.0-20190209173611-3b5209105503
 	golang.org/x/text => golang.org/x/text v0.3.1-0.20181227161524-e6919f6577db
 	golang.org/x/time => golang.org/x/time v0.0.0-20161028155119-f51c12702a4d
-	k8s.io/api => k8s.io/api v0.0.0-20191105135202-f26842a96636
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191105135202-8b539fc8459d
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20191105135202-b132d4e8c200
+	k8s.io/api => k8s.io/api v0.0.0-20191106113314-ccca0f5a3d9c
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20191106113314-e1faffd14b0f
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20191106113314-5fc7a9e1ae72
 )
