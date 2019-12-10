@@ -424,7 +424,7 @@
 		},
 		{
 			"ImportPath": "k8s.io/api",
-			"Rev": "7edad22604e1"
+			"Rev": "97f6f5b52064"
 		},
 		{
 			"ImportPath": "k8s.io/apimachinery",
@@ -432,7 +432,7 @@
 		},
 		{
 			"ImportPath": "k8s.io/client-go",
-			"Rev": "238f979bb496"
+			"Rev": "b9197b961aab"
 		},
 		{
 			"ImportPath": "k8s.io/gengo",
