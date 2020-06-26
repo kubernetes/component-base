@@ -6,7 +6,7 @@ go 1.14
 
 require (
 	github.com/blang/semver v3.5.0+incompatible
-	github.com/go-logr/logr v0.1.0
+	github.com/go-logr/logr v0.2.0
 	github.com/google/go-cmp v0.4.0
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/moby/term v0.0.0-20200312100748-672ec06f55cd
@@ -20,14 +20,15 @@ require (
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
-	k8s.io/apimachinery v0.0.0-20200630203207-4149bbf8192b
-	k8s.io/client-go v0.0.0-20200630090720-03667fd6b18f
-	k8s.io/klog/v2 v2.1.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20200619165400-6e3d28b6ed19
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20200630090439-aaebd44608df
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200630203207-4149bbf8192b
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20200630090720-03667fd6b18f
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
