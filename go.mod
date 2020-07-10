@@ -20,15 +20,14 @@ require (
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
-	k8s.io/apimachinery v0.0.0
-	k8s.io/client-go v0.0.0
+	k8s.io/apimachinery v0.0.0-20200712171229-2c8b1211fea9
+	k8s.io/client-go v0.0.0-20200712171229-b501d6e7bb38
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20200619165400-6e3d28b6ed19
 )
 
 replace (
-	k8s.io/api => ../api
-	k8s.io/apimachinery => ../apimachinery
-	k8s.io/client-go => ../client-go
-	k8s.io/component-base => ../component-base
+	k8s.io/api => k8s.io/api v0.0.0-20200712171229-801f67dca416
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200712171229-2c8b1211fea9
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20200712171229-b501d6e7bb38
 )
