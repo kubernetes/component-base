@@ -368,7 +368,7 @@
 		},
 		{
 			"ImportPath": "github.com/prometheus/client_golang",
-			"Rev": "v1.6.0"
+			"Rev": "v1.7.1"
 		},
 		{
 			"ImportPath": "github.com/prometheus/client_model",
@@ -376,11 +376,11 @@
 		},
 		{
 			"ImportPath": "github.com/prometheus/common",
-			"Rev": "v0.9.1"
+			"Rev": "v0.10.0"
 		},
 		{
 			"ImportPath": "github.com/prometheus/procfs",
-			"Rev": "v0.0.11"
+			"Rev": "v0.1.3"
 		},
 		{
 			"ImportPath": "github.com/rogpeppe/go-internal",
