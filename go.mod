@@ -2,7 +2,7 @@
 
 module k8s.io/component-base
 
-go 1.13
+go 1.15
 
 require (
 	github.com/blang/semver v3.5.0+incompatible
@@ -20,14 +20,15 @@ require (
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
-	k8s.io/apimachinery v0.0.0-20200722125135-a6609cbba4fc
-	k8s.io/client-go v0.0.0-20200722125135-970cddeeea0f
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20200720150651-0bdb4ca86cbc
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20200717102341-0bfda2331c3c
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200722125135-a6609cbba4fc
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20200722125135-970cddeeea0f
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
