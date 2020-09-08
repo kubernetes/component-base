@@ -21,7 +21,7 @@ require (
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
 	k8s.io/apimachinery v0.0.0-20200904051630-d8e5c2b33a59
-	k8s.io/client-go v0.0.0-20200905211905-0d9e08cf3a66
+	k8s.io/client-go v0.0.0-20200907171843-529dda0cb8f9
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20200729134348-d5654de09c73
 )
@@ -29,5 +29,5 @@ require (
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20200904131630-697df40f2d58
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20200904051630-d8e5c2b33a59
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20200905211905-0d9e08cf3a66
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20200907171843-529dda0cb8f9
 )
