@@ -16,19 +16,19 @@ require (
 	github.com/prometheus/procfs v0.2.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.6.1
-	go.uber.org/atomic v1.4.0 // indirect
-	go.uber.org/multierr v1.1.0 // indirect
-	go.uber.org/zap v1.10.0
+	go.uber.org/zap v1.16.0
+	golang.org/x/mod v0.3.1-0.20200828183125-ce943fd02449 // indirect
 	golang.org/x/sys v0.0.0-20210225134936-a50acf3fe073
+	golang.org/x/tools v0.1.0 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20210411031630-d8cdd62f18c3
-	k8s.io/client-go v0.0.0-20210411032117-0bb6464b1348
+	k8s.io/apimachinery v0.0.0-20210411071641-d23dd757f6df
+	k8s.io/client-go v0.0.0-20210411032915-0cfeb7fda9de
 	k8s.io/klog/v2 v2.8.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
 
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20210411031832-6eed676bc189
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20210411031630-d8cdd62f18c3
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20210411032117-0bb6464b1348
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20210411071641-d23dd757f6df
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20210411032915-0cfeb7fda9de
 )
