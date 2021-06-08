@@ -896,7 +896,7 @@
 		},
 		{
 			"ImportPath": "k8s.io/client-go",
-			"Rev": "ded678f91ed5"
+			"Rev": "27d803afea81"
 		},
 		{
 			"ImportPath": "k8s.io/gengo",
