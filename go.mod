@@ -7,8 +7,8 @@ go 1.16
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/blang/semver v3.5.1+incompatible
-	github.com/go-logr/logr v1.1.0
-	github.com/go-logr/zapr v1.1.0
+	github.com/go-logr/logr v1.2.0
+	github.com/go-logr/zapr v1.2.0
 	github.com/google/go-cmp v0.5.5
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/moby/term v0.0.0-20210610120745-9d4ed1856297
@@ -28,14 +28,15 @@ require (
 	golang.org/x/sys v0.0.0-20210820121016-41cdb8703e55
 	golang.org/x/tools v0.1.6-0.20210820212750-d4cc65f0b2ff // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20211022043216-a7973b273a7e
-	k8s.io/client-go v0.0.0-20211022043623-d8ccb0e45466
-	k8s.io/klog/v2 v2.20.0
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
+	k8s.io/klog/v2 v2.30.0
 	k8s.io/utils v0.0.0-20210930125809-cb0fa318a74b
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20211022043400-0d109423f7b5
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20211022043216-a7973b273a7e
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20211022043623-d8ccb0e45466
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
