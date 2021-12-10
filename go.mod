@@ -25,18 +25,18 @@ require (
 	go.opentelemetry.io/otel/sdk v0.20.0
 	go.opentelemetry.io/otel/trace v0.20.0
 	go.uber.org/zap v1.19.0
-	golang.org/x/sys v0.0.0-20210831042530-f4d43177bf5e
-	golang.org/x/tools v0.1.6-0.20210820212750-d4cc65f0b2ff // indirect
+	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654
+	golang.org/x/tools v0.1.8 // indirect
 	google.golang.org/genproto v0.0.0-20210831024726-fe130286e0e2 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20211209170455-0cb2c3db59f8
-	k8s.io/client-go v0.0.0-20211209211038-096f1fdd87d3
+	k8s.io/apimachinery v0.0.0-20211210091738-ee64e4682c13
+	k8s.io/client-go v0.0.0-20211210093131-b945f6e77e16
 	k8s.io/klog/v2 v2.30.0
 	k8s.io/utils v0.0.0-20211208161948-7d6a63dca704
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20211209170646-f3ee22923504
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20211209170455-0cb2c3db59f8
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20211209211038-096f1fdd87d3
+	k8s.io/api => k8s.io/api v0.0.0-20211210092409-e092618ed0af
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20211210091738-ee64e4682c13
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20211210093131-b945f6e77e16
 )
