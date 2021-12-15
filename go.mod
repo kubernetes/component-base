@@ -21,14 +21,14 @@ require (
 	go.uber.org/zap v1.10.0
 	golang.org/x/sys v0.0.0-20210426230700-d19ff857e887
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20211213211846-5ef28cc1b58f
-	k8s.io/client-go v0.0.0-20211213213140-640fc0866f65
+	k8s.io/apimachinery v0.21.9-rc.0
+	k8s.io/client-go v0.21.9-rc.0
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/utils v0.0.0-20210521133846-da695404a2bc
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20211213212415-b0823650fd24
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20211213211846-5ef28cc1b58f
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20211213213140-640fc0866f65
+	k8s.io/api => k8s.io/api v0.21.9-rc.0
+	k8s.io/apimachinery => k8s.io/apimachinery v0.21.9-rc.0
+	k8s.io/client-go => k8s.io/client-go v0.21.9-rc.0
 )
