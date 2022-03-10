@@ -15,7 +15,7 @@ require (
 	github.com/prometheus/client_model v0.2.0
 	github.com/prometheus/common v0.32.1
 	github.com/prometheus/procfs v0.7.3
-	github.com/spf13/cobra v1.2.1
+	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.0
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.20.0
@@ -28,14 +28,15 @@ require (
 	golang.org/x/tools v0.1.10-0.20220218145154-897bd77cd717 // indirect
 	google.golang.org/genproto v0.0.0-20210831024726-fe130286e0e2 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20220226220127-2936d3f03931
-	k8s.io/client-go v0.0.0-20220301020630-8e46da3fd12b
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.40.1
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220226220324-b8c40e080bc5
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220226220127-2936d3f03931
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220301020630-8e46da3fd12b
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
