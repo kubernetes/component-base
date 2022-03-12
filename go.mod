@@ -19,16 +19,17 @@ require (
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
-	golang.org/x/sys v0.0.0-20210426230700-d19ff857e887
+	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20220115052204-78994e499d98
-	k8s.io/client-go v0.0.0-20220224221106-60cd5cbc0179
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/utils v0.0.0-20211116205334-6203023598ed
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220222193518-ee3732ac1699
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220115052204-78994e499d98
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220224221106-60cd5cbc0179
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
