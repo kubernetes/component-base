@@ -5,7 +5,7 @@ module k8s.io/component-base
 go 1.16
 
 require (
-	github.com/blang/semver v3.5.1+incompatible
+	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.2.0
 	github.com/go-logr/zapr v1.2.0
 	github.com/google/go-cmp v0.5.5
@@ -29,14 +29,15 @@ require (
 	golang.org/x/tools v0.1.10-0.20220218145154-897bd77cd717 // indirect
 	google.golang.org/genproto v0.0.0-20220107163113-42d7afdf6368 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/apimachinery v0.0.0-20220327010740-1992dccd17de
-	k8s.io/client-go v0.0.0-20220327011239-402aa66c5cad
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.60.1
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220327010943-9431395a90d0
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220327010740-1992dccd17de
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220327011239-402aa66c5cad
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
