@@ -6,8 +6,8 @@ go 1.18
 
 require (
 	github.com/blang/semver/v4 v4.0.0
-	github.com/go-logr/logr v1.2.0
-	github.com/go-logr/zapr v1.2.0
+	github.com/go-logr/logr v1.2.3
+	github.com/go-logr/zapr v1.2.3
 	github.com/google/go-cmp v0.5.5
 	github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6
 	github.com/prometheus/client_golang v1.12.1
@@ -24,8 +24,8 @@ require (
 	go.opentelemetry.io/otel/trace v0.20.0
 	go.uber.org/zap v1.19.0
 	golang.org/x/sys v0.0.0-20220209214540-3681064d5158
-	k8s.io/apimachinery v0.0.0-20220505102722-5f6d692e6a78
-	k8s.io/client-go v0.0.0-20220505103316-c0ab12afa7f1
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.60.1
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
@@ -79,7 +79,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/api v0.0.0-20220505102950-a2ee8c7e6bdc // indirect
+	k8s.io/api v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20220328201542-3ee0da9b0b42 // indirect
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
@@ -87,7 +87,8 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220505102950-a2ee8c7e6bdc
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220505102722-5f6d692e6a78
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220505103316-c0ab12afa7f1
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
