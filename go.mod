@@ -78,14 +78,14 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/api v0.0.0-20220801041257-f5e1938afa50 // indirect
+	k8s.io/api v0.0.0-20220802150945-1b822083b8d1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220627174259-011e075b9cb8 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220801041257-f5e1938afa50
+	k8s.io/api => k8s.io/api v0.0.0-20220802150945-1b822083b8d1
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220801041106-899984fb2d22
 	k8s.io/client-go => k8s.io/client-go v0.0.0-20220801041543-3e9c4b4f174f
 )
