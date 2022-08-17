@@ -27,15 +27,14 @@ require (
 	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
 	google.golang.org/genproto v0.0.0-20210602131652-f16073e35f0c // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/api v0.0.0-20220222193716-39d32415443c // indirect
-	k8s.io/apimachinery v0.0.0-20220115131919-1ea05acba7c0
-	k8s.io/client-go v0.0.0-20220124172954-be23bb76ca28
+	k8s.io/apimachinery v0.22.13
+	k8s.io/client-go v0.22.13
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/utils v0.0.0-20211116205334-6203023598ed
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220222193716-39d32415443c
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220115131919-1ea05acba7c0
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220124172954-be23bb76ca28
+	k8s.io/api => k8s.io/api v0.22.13
+	k8s.io/apimachinery => k8s.io/apimachinery v0.22.13
+	k8s.io/client-go => k8s.io/client-go v0.22.13
 )
