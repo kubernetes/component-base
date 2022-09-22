@@ -84,6 +84,6 @@ require (
 
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20220922184533-be233f856791
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220922184044-826a74e82875
+	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220922184044-7fb78ee96289
 	k8s.io/client-go => k8s.io/client-go v0.0.0-20220922185149-be20b2bd91d8
 )
