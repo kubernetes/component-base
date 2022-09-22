@@ -17,27 +17,26 @@ require (
 	github.com/prometheus/procfs v0.7.3
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.8.0
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.20.0
 	go.opentelemetry.io/otel v0.20.0
 	go.opentelemetry.io/otel/exporters/otlp v0.20.0
 	go.opentelemetry.io/otel/sdk v0.20.0
 	go.opentelemetry.io/otel/trace v0.20.0
+	go.uber.org/goleak v1.2.0 // indirect
 	go.uber.org/zap v1.19.0
-	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
 	golang.org/x/sys v0.0.0-20220209214540-3681064d5158
-	golang.org/x/tools v0.1.10-0.20220218145154-897bd77cd717 // indirect
 	google.golang.org/genproto v0.0.0-20220107163113-42d7afdf6368 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/api v0.0.0-20220331173702-ec84bcb48bd6 // indirect
-	k8s.io/apimachinery v0.0.0-20220330050810-6550efdb7444
-	k8s.io/client-go v0.0.0-20220331171325-8a672f0fd284
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.60.1
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20220331173702-ec84bcb48bd6
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20220330050810-6550efdb7444
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20220331171325-8a672f0fd284
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/component-base => ../component-base
 )
