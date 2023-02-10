@@ -25,7 +25,7 @@ require (
 	go.uber.org/zap v1.19.0
 	golang.org/x/sys v0.3.0
 	k8s.io/apimachinery v0.0.0-20230210142156-eabbfd57b6c3
-	k8s.io/client-go v0.0.0-20230210153645-2e3434888bb3
+	k8s.io/client-go v0.0.0-20230210153648-9112e1916ffc
 	k8s.io/klog/v2 v2.80.1
 	k8s.io/utils v0.0.0-20221107191617-1a15be271d1d
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2
@@ -76,14 +76,14 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.0.3 // indirect
-	k8s.io/api v0.0.0-20230210143906-1c6bd7031bcf // indirect
+	k8s.io/api v0.0.0-20230210143907-2e857c1304dd // indirect
 	k8s.io/kube-openapi v0.0.0-20221012153701-172d655c2280 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20230210143906-1c6bd7031bcf
+	k8s.io/api => k8s.io/api v0.0.0-20230210143907-2e857c1304dd
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230210142156-eabbfd57b6c3
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230210153645-2e3434888bb3
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20230210153648-9112e1916ffc
 )
