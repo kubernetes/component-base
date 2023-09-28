@@ -25,7 +25,7 @@ require (
 	go.uber.org/zap v1.19.0
 	golang.org/x/sys v0.10.0
 	k8s.io/apimachinery v0.0.0-20230918221506-a017454658b6
-	k8s.io/client-go v0.0.0-20230926135014-52cc500823e5
+	k8s.io/client-go v0.0.0-20230928143146-6b97f71afcff
 	k8s.io/klog/v2 v2.100.1
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd
@@ -37,7 +37,7 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
+	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/felixge/httpsnoop v1.0.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
@@ -88,5 +88,5 @@ require (
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20230920101735-cdfdc4766232
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20230918221506-a017454658b6
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20230926135014-52cc500823e5
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20230928143146-6b97f71afcff
 )
