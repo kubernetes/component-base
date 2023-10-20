@@ -74,18 +74,18 @@ require (
 	google.golang.org/genproto v0.0.0-20230526161137-0005af68ea54 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230525234035-dd9d682886f9 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
-	google.golang.org/grpc v1.55.0 // indirect
+	google.golang.org/grpc v1.56.3 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.0.0-20231020231154-1535dfa58aa1 // indirect
+	k8s.io/api v0.0.0-20231020231155-fe172d7dd4b6 // indirect
 	k8s.io/kube-openapi v0.0.0-20231010175941-2dd684a91f00 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.3.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20231020231154-1535dfa58aa1
+	k8s.io/api => k8s.io/api v0.0.0-20231020231155-fe172d7dd4b6
 	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20231020230052-c047e325a432
 	k8s.io/client-go => k8s.io/client-go v0.0.0-20231020232414-33d14001dbdf
 )
