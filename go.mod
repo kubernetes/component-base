@@ -27,8 +27,8 @@ require (
 	go.opentelemetry.io/otel/trace v1.28.0
 	go.uber.org/zap v1.27.0
 	golang.org/x/sys v0.26.0
-	k8s.io/apimachinery v0.0.0-20240920213627-16af2ff33fbf
-	k8s.io/client-go v0.0.0-20241127164845-55d23e26d5ef
+	k8s.io/apimachinery v0.32.0-rc.1
+	k8s.io/client-go v0.32.0-rc.1
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3
@@ -79,7 +79,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.0.0-20241127162655-f8e5e36c84f1 // indirect
+	k8s.io/api v0.32.0-rc.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20241105132330-32ad38e42d3f // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
 )
