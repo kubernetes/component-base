@@ -6,8 +6,6 @@ go 1.23.0
 
 godebug default=go1.23
 
-godebug winsymlink=0
-
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/go-logr/logr v1.4.2
@@ -29,8 +27,8 @@ require (
 	go.opentelemetry.io/otel/trace v1.28.0
 	go.uber.org/zap v1.27.0
 	golang.org/x/sys v0.28.0
-	k8s.io/apimachinery v0.0.0-20250214214420-47e7fa9a40a2
-	k8s.io/client-go v0.0.0-20250219035121-72c2d4d41534
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20241104100929-3ea5e8cea738
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3
@@ -80,7 +78,13 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.0.0-20250218234707-8ce7fe8996bd // indirect
+	k8s.io/api v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20241212222426-2c72e554b1e7 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
 )
