@@ -27,7 +27,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.33.0
 	go.uber.org/zap v1.27.0
 	golang.org/x/sys v0.31.0
-	k8s.io/apimachinery v0.0.0-20250512230115-1bb0bf9dfa7e
+	k8s.io/apimachinery v0.0.0-20250515191248-b482a2c0d9b0
 	k8s.io/client-go v0.0.0-20250513191953-1308d7c66b4a
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20250502105355-0f33e8f1c979
