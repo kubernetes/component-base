@@ -28,8 +28,8 @@ require (
 	go.uber.org/zap v1.27.0
 	go.yaml.in/yaml/v2 v2.4.2
 	golang.org/x/sys v0.31.0
-	k8s.io/apimachinery v0.0.0-20250828034517-5992c1df72b8
-	k8s.io/client-go v0.0.0-20250828035315-6294eedf760a
+	k8s.io/apimachinery v0.0.0-20250828034517-c9de3735ccce
+	k8s.io/client-go v0.0.0-20250828035317-bccbbb3816a6
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
 	sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8
