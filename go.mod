@@ -29,7 +29,7 @@ require (
 	go.yaml.in/yaml/v2 v2.4.2
 	golang.org/x/sys v0.35.0
 	golang.org/x/text v0.28.0
-	k8s.io/apimachinery v0.0.0-20251003013056-d59a6d67daf4
+	k8s.io/apimachinery v0.0.0-20251004032041-9137522523dd
 	k8s.io/client-go v0.0.0-20251001032722-3c3a19fb562d
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
@@ -79,7 +79,7 @@ require (
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.0.0-20251003032325-3d16ea60c7c1 // indirect
+	k8s.io/api v0.0.0-20251007224459-060922938007 // indirect
 	k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
