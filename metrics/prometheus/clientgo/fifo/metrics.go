@@ -25,11 +25,23 @@ import (
 )
 
 var (
+	subsystem = "informer"
+
 	fifoQueuedItems = k8smetrics.NewGaugeVec(
 		&k8smetrics.GaugeOpts{
-			Subsystem:      "informer",
+			Subsystem:      subsystem,
 			Name:           "queued_items",
 			Help:           "Number of items currently queued in the FIFO.",
+			StabilityLevel: k8smetrics.ALPHA,
+		},
+		[]string{"name", "group", "version", "resource"},
+	)
+	fifoProcessingLatency = k8smetrics.NewHistogramVec(
+		&k8smetrics.HistogramOpts{
+			Subsystem:      subsystem,
+			Name:           "processing_latency_seconds",
+			Help:           "Time taken to process events after popping from the queue.",
+			Buckets:        []float64{0.001, 0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10},
 			StabilityLevel: k8smetrics.ALPHA,
 		},
 		[]string{"name", "group", "version", "resource"},
@@ -45,6 +57,7 @@ func init() {
 func Register() {
 	registerOnce.Do(func() {
 		legacyregistry.MustRegister(fifoQueuedItems)
+		legacyregistry.MustRegister(fifoProcessingLatency)
 	})
 	cache.SetFIFOMetricsProvider(fifoMetricsProvider{})
 }
@@ -55,6 +68,18 @@ func (fifoMetricsProvider) NewQueuedItemMetric(id cache.InformerNameAndResource)
 	return &reservedGaugeMetric{
 		id: id,
 		gauge: fifoQueuedItems.WithLabelValues(
+			id.Name(),
+			id.GroupVersionResource().Group,
+			id.GroupVersionResource().Version,
+			id.GroupVersionResource().Resource,
+		),
+	}
+}
+
+func (fifoMetricsProvider) NewProcessingLatencyMetric(id cache.InformerNameAndResource) cache.HistogramMetric {
+	return &reservedHistogramMetric{
+		id: id,
+		histogram: fifoProcessingLatency.WithLabelValues(
 			id.Name(),
 			id.GroupVersionResource().Group,
 			id.GroupVersionResource().Version,
@@ -74,5 +99,19 @@ type reservedGaugeMetric struct {
 func (r *reservedGaugeMetric) Set(value float64) {
 	if r.id.Reserved() {
 		r.gauge.Set(value)
+	}
+}
+
+// reservedHistogramMetric wraps a histogram and only updates it if the identifier
+// is still reserved. This supports dynamic informers (e.g., GC, ResourceQuota)
+// that may shut down while the process is still running.
+type reservedHistogramMetric struct {
+	id        cache.InformerNameAndResource
+	histogram cache.HistogramMetric
+}
+
+func (r *reservedHistogramMetric) Observe(value float64) {
+	if r.id.Reserved() {
+		r.histogram.Observe(value)
 	}
 }
