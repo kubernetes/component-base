@@ -29,7 +29,7 @@ require (
 	golang.org/x/sys v0.43.0
 	golang.org/x/text v0.36.0
 	k8s.io/apimachinery v0.0.0-20260424110437-f75bcf7bc970
-	k8s.io/client-go v0.0.0-20260424111358-5834c79c33cb
+	k8s.io/client-go v0.0.0-20260424191437-9c68566d662e
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730
