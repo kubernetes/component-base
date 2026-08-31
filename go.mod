@@ -28,7 +28,7 @@ require (
 	go.yaml.in/yaml/v2 v2.4.4
 	golang.org/x/sys v0.47.0
 	golang.org/x/text v0.40.0
-	k8s.io/apimachinery v0.0.0-20260829005050-50d9b4a672b4
+	k8s.io/apimachinery v0.0.0-20260830211405-7dc327f6cd52
 	k8s.io/client-go v0.0.0-20260829005942-d4060b1a90a3
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
