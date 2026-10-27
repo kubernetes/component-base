@@ -28,8 +28,8 @@ require (
 	go.yaml.in/yaml/v2 v2.4.4
 	golang.org/x/sys v0.49.0
 	golang.org/x/text v0.43.0
-	k8s.io/apimachinery v0.0.0-20261023231642-daa7d83b88ed
-	k8s.io/client-go v0.0.0-20261023232832-4e255c3a1194
+	k8s.io/apimachinery v0.0.0
+	k8s.io/client-go v0.0.0
 	k8s.io/klog/v2 v2.140.0
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730
@@ -69,15 +69,23 @@ require (
 	golang.org/x/oauth2 v0.37.0 // indirect
 	golang.org/x/term v0.47.0 // indirect
 	golang.org/x/time v0.16.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260803160001-6ac0973c030d // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260817212433-ac3dfec99bb1 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260928230214-8a89bd6388cc // indirect
-	google.golang.org/grpc v1.84.0 // indirect
+	google.golang.org/grpc v1.85.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	k8s.io/api v0.0.0-20261023232138-4aafda5c5cf5 // indirect
+	k8s.io/api v0.0.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20261014044854-ca3452a79603 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v7 v7.0.1 // indirect
 	sigs.k8s.io/yaml v1.6.0 // indirect
+)
+
+replace (
+	k8s.io/api => ../api
+	k8s.io/apimachinery => ../apimachinery
+	k8s.io/client-go => ../client-go
+	k8s.io/ktesting => ../ktesting
+	k8s.io/streaming => ../streaming
 )
